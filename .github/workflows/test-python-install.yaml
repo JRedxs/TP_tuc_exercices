@@ -37,8 +37,8 @@ jobs: #création d'un jobs
           python -m pytest
       - name: Python pylint
         run: |
-          pylint application/ tests/
-          pylint-exit $?
+          pylint application/ tests/  --fail-under=20
+         
 
 
 
