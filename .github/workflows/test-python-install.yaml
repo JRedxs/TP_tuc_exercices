@@ -37,9 +37,8 @@ jobs: #création d'un jobs
           python -m pytest
       - name: Python pylint
         run: |
-          pylint $(git ls-files '*.py')
-    
-          
+          pylint application/ tests/  
+
          
 
 
