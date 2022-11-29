@@ -37,7 +37,10 @@ jobs: #création d'un jobs
           python -m pytest
       - name: Python pylint
         run: |
-          pylint application/ tests/  --fail-under=20
+          pylint application/ tests/  
+      - name: Analysing the code with pylint
+        run: |
+          pylint $(git ls-files '*.py')
          
 
 
