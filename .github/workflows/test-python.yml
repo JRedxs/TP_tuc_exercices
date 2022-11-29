@@ -6,7 +6,7 @@ on:
 
 jobs: #création d'un jobs
   tests: #nom du premier jobs
-      runs on: ubuntu latest #machine sur laquelle cela va tourner
+      runs-on: ubuntu latest #machine sur laquelle cela va tourner
 
       steps:
          - uses: action/checkout@v3 #On va pull le depôt git
