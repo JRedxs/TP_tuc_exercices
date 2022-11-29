@@ -1,0 +1,16 @@
+name: Python CI
+
+on:
+  workflow_dispatch:  #déclenchement manuelle
+  push: ['main']
+
+jobs: #création d'un jobs
+  tests: #nom du premier jobs
+      runs on: ubuntu latest #machine sur laquelle cela va tourner
+
+      steps:
+         - uses: action/checkout@v3 #On va pull le depôt git
+         - name: Print folder
+           run: | #c'est pour dire qu'on va avoir plusieurs lignes
+              ls
+
