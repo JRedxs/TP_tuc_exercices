@@ -38,6 +38,7 @@ jobs: #création d'un jobs
       - name: Python pylint
         run: |
           pylint application/ tests/
+          pylint-exit $?
 
 
 
